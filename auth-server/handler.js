@@ -5,11 +5,11 @@ const axios = require('axios');
 module.exports.getAccessToken = async (event) => {
 
   const MEETUP_OAUTH_URL = 'https://secure.meetup.com/oauth2/access'
-    + '?client_id=YOUR_CONSUMER_KEY'
-    + '&client_secret=YOUR_CONSUMER_SECRET'
+    + '?client_id=jr2bsub23bropmv7e9cn3v9mvp'
+    + '&client_secret=j0jrlqsm7357f31q6n4a9lt2sd'
     + '&grant_type=authorization_code'
-    + '&redirect_uri=https://github.com/cilvin'
-    + '&code=USER_AUTHORIZATION_CODE';
+    + '&redirect_uri=https://cilvin.github.io/meetup/'
+    + '&code=1496cc2897ab82cada101c5f2d0eefc4';
 
   const info = await axios.post(MEETUP_OAUTH_URL);
 
