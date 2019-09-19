@@ -9,7 +9,7 @@ module.exports.getAccessToken = async (event) => {
     + '&client_secret=j0jrlqsm7357f31q6n4a9lt2sd'
     + '&grant_type=authorization_code'
     + '&redirect_uri=https://cilvin.github.io/meetup/'
-    + '&code=1496cc2897ab82cada101c5f2d0eefc4';
+    + '&code=' + event.pathParameters.code;
 
   const info = await axios.post(MEETUP_OAUTH_URL);
 
