@@ -10,7 +10,8 @@
 #    docs.serverless.com
 #
 # Happy Coding!
-
+org: cilvin33
+app: meetup-serverless
 service: auth-server
 #app: your-app-name
 #tenant: your-tenant-name
@@ -21,9 +22,10 @@ service: auth-server
 
 provider:
   name: aws
-  region: us-west-1
+  region: us-west-2
   runtime: nodejs8.10
   timeout: 60
+  
 
 # you can overwrite defaults here
 #  stage: dev

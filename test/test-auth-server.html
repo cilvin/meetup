@@ -22,7 +22,7 @@
 
         // get token script
         const lambdaURL =
-          'https://63952yyimc.execute-api.us-west-1.amazonaws.com/dev/api/token/' +
+          'https://a1yi0t3eah.execute-api.us-west-2.amazonaws.com/dev/api/token/' +
           codeValue;
 
         fetch(lambdaURL)
@@ -40,7 +40,7 @@
               const refreshCodeElement = document.getElementById('refreshCode')
               const refreshResult = document.getElementById('refreshResult')
               const refreshCodeValue= refreshCodeElement.value;
-              const lambraRefresh = 'https://63952yyimc.execute-api.us-west-1.amazonaws.com/dev/api/refresh/' + refreshCodeValue
+              const lambraRefresh = 'https://a1yi0t3eah.execute-api.us-west-2.amazonaws.com/dev/api/refresh/' + refreshCodeValue
               fetch(lambraRefresh)
                 .then(function(response) {
                   return response.json();
