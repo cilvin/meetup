@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Event from '../src/Event';
+import Event from '../components/Event';
 
 state ={
   events:[],
