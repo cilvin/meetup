@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Event from '../components/Event';
 
-state ={
-  events:[],
-}
+
 
 class EventList extends Component {
+
+  state ={
+    events:[],
+  }
+
   render() {
     return (
       <ul className="EventList">
@@ -16,5 +19,6 @@ class EventList extends Component {
       </ul>
     );
   }
+}
 
 export default EventList;
