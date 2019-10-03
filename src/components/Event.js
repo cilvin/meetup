@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EventDetails from '../components/EventDetails';
 
 
 class Event extends Component {
@@ -24,5 +25,6 @@ class Event extends Component {
       </div>
     );
   }
+}
 
 export default Event;
