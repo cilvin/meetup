@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Event from '../components/Event';
-import EventDetails from '../EventDetails';
+import EventDetails from '../components/EventDetails';
 
 describe('<Event /> component', () => {
     let EventWrapper;

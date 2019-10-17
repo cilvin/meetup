@@ -60,3 +60,6 @@ describe('<App /> integration', () => {
   });
 });
 
+describe('<App /> integration', () => {
+
+});
