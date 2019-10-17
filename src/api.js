@@ -1,3 +1,6 @@
+import axios from 'axios';
+import { mockEvents } from '../src/components/mock-events';
+
 async function getSuggestions(query) {
   return [
     {
@@ -22,4 +25,9 @@ async function getSuggestions(query) {
   ];
 }
 
-export { getSuggestions };
+async function getEvents(lat, lon) {
+    return mockEvents.events;
+  }
+
+
+export { getSuggestions, getEvents };
