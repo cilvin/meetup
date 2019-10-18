@@ -35,6 +35,7 @@ describe('<CitySearch /> component', () => {
       ).toBe(suggestions[i].name_string);
     }
   });
+});
   test('click on suggestion should change query state and empty the list of suggestions', () => {
     CitySearchWrapper.setState({
       suggestions: [
