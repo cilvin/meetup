@@ -96,11 +96,11 @@ async function getOrRenewAccessToken(type, key) {
   let url;
   if (type === 'get') {
     // Lambda endpoint to get token by code
-    url = 'https://977jsu04r2.execute-api.eu-central-1.amazonaws.com/dev/api/token/'
+    url = 'https://a1yi0t3eah.execute-api.us-west-2.amazonaws.com/dev/api/token/'
       + key;
   } else if (type === 'renew') {
     // Lambda endpoint to get token by refresh_token
-    url = 'https://977jsu04r2.execute-api.eu-central-1.amazonaws.com/dev/api/refreshtoken/'
+    url = 'https://a1yi0t3eah.execute-api.us-west-2.amazonaws.com/dev/api/refreshtoken'
       + key;
   }
 
