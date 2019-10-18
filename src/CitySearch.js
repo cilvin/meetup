@@ -1,42 +1,40 @@
 import React, { Component } from 'react';
-import { getSuggestions } from '../api';
+import { getSuggestions } from './api';
 
 class CitySearch extends Component {
   state = {
     query: '',
     suggestions: []
-  };
+  }
 
-  handleInputChanged = event => {
+  handleInputChanged = (event) => {
     const value = event.target.value;
     this.setState({ query: value });
     getSuggestions(value).then(suggestions => this.setState({ suggestions }));
-  };
+  }
 
   handleItemClicked = (value, lat, lon) => {
     this.setState({ query: value, suggestions: [] });
     this.props.updateEvents(lat, lon);
   }
+
   render() {
     return (
       <div className="CitySearch">
         <input
           type="text"
           className="city"
-          onChange={this.handleInputChanged}
           value={this.state.query}
+          onChange={this.handleInputChanged}
+          placeholder="Your City of Choice"
         />
+
         <ul className="suggestions">
-          {this.state.suggestions.map(item => (
-            <li
-              key={item.name_string}
-              onClick={() =>
-                this.handleItemClicked(item.name_string, item.lat, item.lon)
-              }
-            >
+          {this.state.suggestions.map(item =>
+            <li key={item.name_string} onClick={() => this.handleItemClicked(item.name_string, item.lat, item.lon)}>
               {item.name_string}
             </li>
-          ))}
+          )}
         </ul>
       </div>
     );
