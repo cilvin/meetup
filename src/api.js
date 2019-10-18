@@ -74,7 +74,7 @@ function getAccessToken() {
     const code = searchParams.get('code');
 
     if (!code) {
-      window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=p7ek3hd2gcir2hpcvsih91or6d&response_type=code&redirect_uri=https://guennithegun.github.io/meetup/';
+      window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=3366df0fefd8be7a22d214f9e81240bb&response_type=code&redirect_uri=https://cilvin.github.io/meetup/';
       return null;
     }
 
