@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class Event extends Component {
   state = {
-    event: [],
     showDetails: false
   }
 
@@ -21,8 +20,8 @@ class Event extends Component {
     return(
       <div className="event">
         <div className="event__Overview">
-          <p className="event__Overview--name">{this.state.event.name}</p>
-          <p className="event__Overview--localDate">{this.state.event.local_date}</p>
+          <p className="event__Overview--name">{this.props.event.name}</p>
+          <p className="event__Overview--localDate">{this.props.event.local_date}</p>
           <button className="details-btn" onClick={() => this.handleShowDetails()}>show details</button>
         </div>
         {showDetails &&
