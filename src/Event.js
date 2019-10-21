@@ -26,7 +26,7 @@ class Event extends Component {
         </div>
         {showDetails &&
           <div className="event__Details">
-            <p className="event__Details--description">{this.state.event.description}</p>
+            <p className="event__Details--description">{this.props.event.description}</p>
           </div>
         }
       </div>
