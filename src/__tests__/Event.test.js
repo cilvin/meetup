@@ -9,7 +9,7 @@ describe('<Event /> component', () => {
 
   let EventWrapper;
   beforeAll(() => {
-   event= {
+   const event= {
       created: 1563825339000,
       duration: 9000000,
       id: "263370107",
@@ -55,7 +55,7 @@ describe('<Event /> component', () => {
       visibility: "public",
       member_pay_fee: false
     }
-    EventWrapper = shallow(<Event/>);
+    EventWrapper = shallow(<Event event={event}/>);
   });
 
   test('test that componet is rendered', () => {
