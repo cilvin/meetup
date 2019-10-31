@@ -99,6 +99,7 @@ input[type="text"], input[type="number"] {
 
 .numberOfEvents {
   width: 200px;
-  margin: 20px 0 50px;
-  text-align: left;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
 }
